@@ -1,0 +1,484 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
+
+:root {
+    /* Colors  */
+    --color-primary: #fffafa;
+    --color-secondary: #110904;
+
+    --color-100: #efefef;
+    --color-200: #dcdcdc;
+    --color-300: #bdbdbd;
+    --color-400: #989898;
+    --color-500: #7c7c7c;
+    --color-600: #656565;
+    --color-700: #525252;
+    --color-800: #464646;
+    --color-900: #3d3d3d;
+
+    /* Border Radius  */
+    --xs-radius: 5px;
+    --s-radius: 6px;
+    --m-radius: 8px;
+    --n-radius: 10px;
+    --l-radius: 12px;
+    --xl-radius: 15px;
+    --round-radius: 50%;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    appearance: none;
+    font-family: 'Inter', sans-serif;
+}
+
+@font-face {
+    font-family: 'Futura';
+    src: url('/fonts/Futura-Bold.ttf');
+    font-style: normal;
+    font-weight: 1 1000;
+}
+
+h1,
+h2,
+h2,
+h4,
+h5,
+h6 {
+    font-family: 'Futura';
+}
+
+*::selection {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background: var(--color-100);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+    cursor: pointer;
+}
+
+img,
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    -o-object-fit: cover;
+    object-position: center;
+    -o-object-position: center;
+    cursor: pointer;
+}
+
+button {
+    cursor: pointer;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.flex-centre {
+    display: flex;
+    align-items: center;
+}
+
+.j-between {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#cursor {
+    width: 120px;
+    height: 120px;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    border-radius: var(--round-radius);
+    background: var(--color-500);
+    scale: 0;
+}
+
+.btn-primary {
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    padding: 10px 15px;
+    font-weight: 400;
+    border-radius: var(--l-radius);
+}
+
+.btn-secondary {
+    font-weight: 400;
+    padding: 5px 10px;
+    border: 1px solid var(--color-200);
+    border-radius: var(--n-radius);
+    color: var(--color-900);
+    animation: all ease 300ms;
+}
+
+.btn-secondary:hover {
+    color: var(--color-secondary);
+}
+
+/* --NAVIGATION MENU -- */
+nav {
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    padding: 1vw 1.5vw;
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid var(--color-200);
+}
+
+#logo h2 {
+    letter-spacing: -1px;
+}
+
+#nav-links {
+    gap: 3vw;
+}
+
+#nav-links ul {
+    gap: 2vw;
+}
+
+#nav-links ul li a {
+    font-weight: 500;
+    color: var(--color-900);
+}
+
+#hamburger {
+    cursor: pointer;
+    display: none;
+    z-index: 10;
+}
+
+#hamburger .bar {
+    display: block;
+    margin: 5px auto;
+    width: 25px;
+    height: 2px;
+    border-radius: var(--xs-radius);
+    background: var(--color-secondary);
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#hamburger.active .bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+#hamburger.active .bar:nth-child(2) {
+    transform: rotate(-45deg);
+}
+
+#page1 {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 0 1vw;
+    padding-top: 15vh;
+}
+
+#page1 h1 {
+    font-size: 10.2vw;
+    line-height: 10vw;
+    letter-spacing: 1px;
+}
+
+#video-container {
+    height: 100vh;
+    width: 100%;
+    margin-top: 1vw;
+    position: relative;
+    overflow: hidden;
+    border-radius: var(--xl-radius);
+}
+
+#video-container #play {
+    padding: 3vw 2vw;
+    font-size: 1.5vw;
+    font-weight: 700;
+    background: var(--color-secondary);
+    color: var(--color-primary);
+    position: fixed;
+    border-radius: var(--round-radius);
+    opacity: 0;
+    scale: 0;
+}
+
+#page2,
+#page3,
+#page4,
+#page5 {
+    position: relative;
+    min-height: 50vh;
+    width: 100%;
+    padding: 2vw 1vw;
+}
+
+#page2 .left {
+    width: 50%;
+    padding-right: 10vw;
+}
+
+#page2 h1,
+#page3 h1,
+#page4 h1,
+#page5 h1 {
+    font-size: 5vw;
+}
+
+#page2 h2,
+#page5 h2 {
+    font-style: 'Inter';
+    font-size: 3vw;
+    line-height: 3vw;
+    letter-spacing: -1px;
+}
+
+#page2 p {
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5vw;
+}
+
+#page2 a {
+    gap: 5px;
+    margin-top: 3vw;
+    width: fit-content;
+}
+
+#page2 a span {
+    animation: all 0.3s ease;
+}
+
+#page2 a:hover span {
+    transform: translateX(5px);
+}
+
+#page2 .right {
+    width: 50%;
+    overflow: hidden;
+    padding: 5vw;
+}
+
+#page2 .right img {
+    border-radius: var(--xl-radius);
+
+}
+
+.arrow {
+    display: inline-block;
+    width: 15px;
+    height: 2px;
+    background: var(--color-800);
+    position: relative;
+}
+
+.arrow::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    right: 0;
+    transform: rotate(45deg);
+    width: 5px;
+    height: 2px;
+    background: var(--color-800);
+}
+
+.arrow::after {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 0;
+    transform: rotate(-45deg);
+    width: 5px;
+    height: 2px;
+    background: var(--color-800);
+}
+
+#page3 h1,
+#page4 h1,
+#page5 h1,
+#page5 h2 {
+    text-align: center;
+}
+
+#page3 #elements {
+    padding-top: 5vw;
+}
+
+#page3 .elem {
+    width: 250px;
+    height: 250px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    background: linear-gradient(to right, var(--color-500) 0%, var(--color-600) 100%);
+    border-radius: var(--round-radius);
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-100);
+    animation: all 300ms ease;
+}
+
+#page3 .elem:hover {
+    background: linear-gradient(to right, #9a9a9a 0%, #838383 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#page3 button {
+    display: block;
+    margin: 0 auto;
+    font-size: 1.5vw;
+    padding: 1vw 4vw;
+    margin-top: 2vw;
+}
+
+#page4 h1 {
+    padding-bottom: 2vw;
+    border-bottom: 1px solid var(--color-300);
+}
+
+/* SWIPER  */
+#page4 #swiper-div {
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    margin-top: 2vw;
+}
+
+.swiper-slide {
+    border-radius: var(--xl-radius);
+    overflow: hidden;
+    width: 450px;
+    height: 450px;
+}
+
+#page5 #form {
+    /* background: var(--color-200); */
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+#form form {
+    padding: 2vw;
+    max-width: 750px;
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color-200);
+    background: rgba(239, 239, 239, 0.5);
+    border-radius: var(--m-radius);
+}
+
+form .field {
+    width: 100%;
+    margin-top: 1vw;
+}
+
+form .field label {
+    font-weight: 500;
+    margin-bottom: 1vw;
+}
+
+form .field label span {
+    font-weight: 400;
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+form .field input {
+    height: 2.5rem;
+    width: 100%;
+    background: transparent;
+    border-bottom: 1px solid var(--color-700);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+form .field textarea {
+    width: 100%;
+    height: 6rem;
+    background: transparent;
+    border-bottom: 1px solid var(--color-700);
+    font-size: 16px;
+    font-weight: 500;
+    resize: none;
+}
+
+form button {
+    padding-top: 2vw;
+    font-size: 16px;
+    /* margin: auto; */
+    display: block;
+    width: 100%;
+}
+
+#page5 h2{
+    margin-bottom: 2vw;
+}
+#custom{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    margin-top: 2vw;
+}
+
+#form, #connect{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+#connect svg{
+    width: 50px;
+    height: 50px;
+    }
+    #connect .icon{
+    gap: 5px;
+    margin-bottom: 2vw;
+}
+#connect #wp{
+    font-weight: 900;
+    font-size: 2.5vw;
+    cursor: pointer;
+    word-break: break-word;
+}
+#connect #wp:hover{
+    text-decoration: underline;
+}
+#conn{
+    gap: 1.5vw;
+}
+#copy{
+    border-top: 1px solid var(--color-300);
+    font-weight: 500;
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    word-break: break-word;
+    font-size: 16px;
+    display: block;
+    width: 100%;
+    text-align: center;
+}

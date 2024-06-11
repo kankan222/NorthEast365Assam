@@ -1,0 +1,140 @@
+@media (max-width: 600px) {
+    nav {
+        padding: 3vw;
+    }
+    #nav-links{
+        display: none;
+    }
+    #nav-links.active {
+        display: flex;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background: var(--color-primary);
+        width: 80%;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    #nav-links ul {
+        padding-right: vw;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 25vw;
+    }
+
+    #nav-links ul li a {
+        font-family: 'Futura';
+        font-size: 8vw;
+    }
+
+    #nav-links button{
+        width: 90%;
+    margin-top: 15vw;
+    font-weight: 800;
+    /* padding: px; */
+    font-size: 5vw;
+    }
+    #hamburger {
+        display: block;
+    }
+
+    #logo h2 {
+        letter-spacing: 0;
+    }
+
+    #page1 {
+        min-height: 65vh;
+        padding: 0 3vw;
+        padding-top: 15vh;
+    }
+
+    #page1 h1 {
+        font-size: 10vw;
+        letter-spacing: 0;
+    }
+
+    #video-container {
+        height: 25vh;
+        margin-top: 3vw;
+    }
+
+    #video-container #play {
+        padding: 10vw 7vw;
+        font-size: 4.5vw;
+        font-weight: 700;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 1;
+        scale: 1;
+    }
+
+    #page2, #page4 , #page5 {
+        min-height: 70vh;
+        padding: 0 3vw;
+        flex-direction: column;
+    }
+    #page2 .left{
+        width: 100%;
+        padding-right: 0;
+    }
+    #page2 h1, #page3 h1, #page4 h1, #page5 h1{
+        font-size: 8vw;
+    }
+    #page2 h2, #page5 h2{
+        font-size: 6vw;
+        line-height: 8vw;
+    letter-spacing: 0px;
+    }
+    #page2 p{
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    #page2 .right{
+        width: 100%;
+        margin-top: 5vw;
+        padding: 0;
+    }
+    #page3, #page4{
+        padding-top: 10vw;
+        min-height: 70vh;
+    }
+    #page3 #elements{
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    #page3 .elem{
+        width: 120px;
+        height: 120px;
+        font-size: 14px;
+        padding: 15px;
+    }
+    #page3 button{
+        font-size: 5vw;
+        padding: 3vw 8vw;
+        margin-top: 4vw;
+    }
+    #page4 #swiper-div {
+        height: 50vh;
+    }
+    .swiper-slide {
+        width: 350px;
+        height: 300px;
+    }
+    #page5 #form{
+        height: 50vh;
+    }
+    #custom{
+        flex-direction: column;
+    }
+    #connect svg{
+        width: 30px;
+        height: 30px;
+    }
+    #connect #wp{
+        font-size: 5.5vw;
+    }
+}

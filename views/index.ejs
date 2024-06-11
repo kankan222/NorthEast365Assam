@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>North East 365 Assam</title>
+    <!-- CSS  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+
+</head>
+
+<body>
+    <div id="cursor"></div>
+    <nav class="j-between">
+        <div id="logo">
+            <h2 class="uppercase">North east</h2>
+            <h2 class="uppercase">365 Assam</h2>
+        </div>
+        <div id="nav-links" class="flex-centre">
+            <ul class="flex-centre">
+                <li><a href="#" class="uppercase">home</a></li>
+                <li><a href="" class="uppercase">about us</a></li>
+                <li><a href="" class="uppercase">testimonials</a></li>
+            </ul>
+            <button class="btn-primary uppercase">get a free quote</button>
+        </div>
+        <div id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </nav>
+    <main>
+        <section id="page1">
+            <h1 class="uppercase">Expert</h1>
+            <h1 class="uppercase">Construction</h1>
+            <h1 class="uppercase">Lasting Quality</h1>
+            <div id="video-container">
+                <div id="play" class="uppercase">play</div>
+                <video src="/video/video.mp4" autoplay loop muted></video>
+            </div>
+        </section>
+        <section id="page2" class="j-between">
+            <div class="left">
+                <h1 class="uppercase">About us</h1>
+                <h2>Your Trusted Partner in Construction</h2>
+                <p>At North East 365 Assam, we believe in building more than just structures; we build lasting
+                    relationships with our clients. With over 15+ years of experience, our team of skilled professionals
+                    is committed to delivering exceptional quality and service in every project we undertake. Whether
+                    it's residential, commercial, or industrial construction, we have the expertise to handle it all.
+                </p>
+
+                <a href="#" class="btn-secondary flex-centre">Read More <span class="arrow"></span></a>
+            </div>
+            <div class="right">
+                <img src="/img/slider1.jpg" alt="image">
+            </div>
+        </section>
+        <section id="page3">
+            <h1 class="uppercase">why choose us ?</h1>
+            <div id="elements" class="j-between">
+                <p class="elem elem1">Expert Craftsmanship</p>
+                <p class="elem elem2">Customer Focused</p>
+                <p class="elem elem3">On-Time Delivery</p>
+                <p class="elem elem4">Quality Materials</p>
+                <p class="elem elem5">Competitive Pricing</p>
+            </div>
+            <button class="btn-primary">Get Started</button>
+        </section>
+        <section id="page4">
+            <h1 class="uppercase">Testimonials</h1>
+            <div id="swiper-div">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="/img/slider1.jpg" alt="image" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/slider2.jpg" alt="image" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/slider3.jpg" alt="image" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/slider4.jpg" alt="image" loading="lazy">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="/img/slider5.jpg" alt="image" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="page5" id="contact">
+            <h1 class="uppercase">Ready to Start Your Project?</h1>
+            <div id="custom">
+                <div id="form">
+                    <h2>Contact Us Now</h2>
+                    <form action="">
+                        <div class="field">
+                            <label for="name" class="uppercase">Name<span>(required)</span></label>
+                            <input type="text" name="name" id="name">
+                        </div>
+                        <div class="field">
+                            <label for="pnumber" class="uppercase">Phone Number<span>(required)</span></label>
+                            <input type="text" name="pnumber" id="pnumber">
+                        </div>
+                        <div class="field">
+                            <label for="name" class="uppercase">Message <span>(*optional)</span></label>
+                            <textarea name="" id=""></textarea>
+                        </div>
+                        <button class="btn-primary" onclick="sendMail()">Send</button>
+                    </form>
+                </div>
+                <div id="connect">
+                    <h2>Whatsapp / Email</h2>
+                    <p class="icon flex-centre"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            style="enable-background:new 0 0 24 24" xml:space="preserve" id="whatsapp">
+                            <path fill="#000000"
+                                d="M16.6 14c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.2-.5-.5-1-1.1-1.4-1.7-.1-.2 0-.4.1-.5.1-.1.2-.3.4-.4.1-.1.2-.3.2-.4.1-.1.1-.3 0-.4-.1-.1-.6-1.3-.8-1.8-.1-.7-.3-.7-.5-.7h-.5c-.2 0-.5.2-.6.3-.6.6-.9 1.3-.9 2.1.1.9.4 1.8 1 2.6 1.1 1.6 2.5 2.9 4.2 3.7.5.2.9.4 1.4.5.5.2 1 .2 1.6.1.7-.1 1.3-.6 1.7-1.2.2-.4.2-.8.1-1.2l-.4-.2m2.5-9.1C15.2 1 8.9 1 5 4.9c-3.2 3.2-3.8 8.1-1.6 12L2 22l5.3-1.4c1.5.8 3.1 1.2 4.7 1.2 5.5 0 9.9-4.4 9.9-9.9.1-2.6-1-5.1-2.8-7m-2.7 14c-1.3.8-2.8 1.3-4.4 1.3-1.5 0-2.9-.4-4.2-1.1l-.3-.2-3.1.8.8-3-.2-.3c-2.4-4-1.2-9 2.7-11.5S16.6 3.7 19 7.5c2.4 3.9 1.3 9-2.6 11.4">
+                            </path>
+                        </svg>
+                        <span id="wp" onclick="window.open(`https://wa.me/+91 6002649802?text=Hi, %20I'm%20looking%20forward%20to%20connect%20`)">+91 93658 79290</span>
+                    </p>
+                    <p class="icon flex-centre"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" id="envelope-alt"><path fill="#000000" d="M19,4H5A3,3,0,0,0,2,7V17a3,3,0,0,0,3,3H19a3,3,0,0,0,3-3V7A3,3,0,0,0,19,4ZM5,6H19a1,1,0,0,1,1,1l-8,4.88L4,7A1,1,0,0,1,5,6ZM20,17a1,1,0,0,1-1,1H5a1,1,0,0,1-1-1V9.28l7.48,4.57a1,1,0,0,0,1,0L20,9.28Z"></path></svg>
+                        <span id="wp" onclick="window.open(`mailto:pankajpator@northeast365assam.com`)">pankajpator@northeast365assam.com</span>
+                    </p>
+                    <h2>Connect with Us</h2>
+                    <div class="flex-centre" id="conn">
+                        <p class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="facebook">
+                                <path fill="#000000"
+                                    d="M20.9,2H3.1A1.1,1.1,0,0,0,2,3.1V20.9A1.1,1.1,0,0,0,3.1,22h9.58V14.25h-2.6v-3h2.6V9a3.64,3.64,0,0,1,3.88-4,20.26,20.26,0,0,1,2.33.12v2.7H17.3c-1.26,0-1.5.6-1.5,1.47v1.93h3l-.39,3H15.8V22h5.1A1.1,1.1,0,0,0,22,20.9V3.1A1.1,1.1,0,0,0,20.9,2Z">
+                                </path>
+                            </svg>
+                        </p>  
+                        <p class="icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" data-name="Layer 1" viewBox="0 0 24 24" id="instagram-alt"><path fill="#000000" d="M12,9.52A2.48,2.48,0,1,0,14.48,12,2.48,2.48,0,0,0,12,9.52Zm9.93-2.45a6.53,6.53,0,0,0-.42-2.26,4,4,0,0,0-2.32-2.32,6.53,6.53,0,0,0-2.26-.42C15.64,2,15.26,2,12,2s-3.64,0-4.93.07a6.53,6.53,0,0,0-2.26.42A4,4,0,0,0,2.49,4.81a6.53,6.53,0,0,0-.42,2.26C2,8.36,2,8.74,2,12s0,3.64.07,4.93a6.86,6.86,0,0,0,.42,2.27,3.94,3.94,0,0,0,.91,1.4,3.89,3.89,0,0,0,1.41.91,6.53,6.53,0,0,0,2.26.42C8.36,22,8.74,22,12,22s3.64,0,4.93-.07a6.53,6.53,0,0,0,2.26-.42,3.89,3.89,0,0,0,1.41-.91,3.94,3.94,0,0,0,.91-1.4,6.6,6.6,0,0,0,.42-2.27C22,15.64,22,15.26,22,12S22,8.36,21.93,7.07Zm-2.54,8A5.73,5.73,0,0,1,19,16.87,3.86,3.86,0,0,1,16.87,19a5.73,5.73,0,0,1-1.81.35c-.79,0-1,0-3.06,0s-2.27,0-3.06,0A5.73,5.73,0,0,1,7.13,19a3.51,3.51,0,0,1-1.31-.86A3.51,3.51,0,0,1,5,16.87a5.49,5.49,0,0,1-.34-1.81c0-.79,0-1,0-3.06s0-2.27,0-3.06A5.49,5.49,0,0,1,5,7.13a3.51,3.51,0,0,1,.86-1.31A3.59,3.59,0,0,1,7.13,5a5.73,5.73,0,0,1,1.81-.35h0c.79,0,1,0,3.06,0s2.27,0,3.06,0A5.73,5.73,0,0,1,16.87,5a3.51,3.51,0,0,1,1.31.86A3.51,3.51,0,0,1,19,7.13a5.73,5.73,0,0,1,.35,1.81c0,.79,0,1,0,3.06S19.42,14.27,19.39,15.06Zm-1.6-7.44a2.38,2.38,0,0,0-1.41-1.41A4,4,0,0,0,15,6c-.78,0-1,0-3,0s-2.22,0-3,0a4,4,0,0,0-1.38.26A2.38,2.38,0,0,0,6.21,7.62,4.27,4.27,0,0,0,6,9c0,.78,0,1,0,3s0,2.22,0,3a4.27,4.27,0,0,0,.26,1.38,2.38,2.38,0,0,0,1.41,1.41A4.27,4.27,0,0,0,9,18.05H9c.78,0,1,0,3,0s2.22,0,3,0a4,4,0,0,0,1.38-.26,2.38,2.38,0,0,0,1.41-1.41A4,4,0,0,0,18.05,15c0-.78,0-1,0-3s0-2.22,0-3A3.78,3.78,0,0,0,17.79,7.62ZM12,15.82A3.81,3.81,0,0,1,8.19,12h0A3.82,3.82,0,1,1,12,15.82Zm4-6.89a.9.9,0,0,1,0-1.79h0a.9.9,0,0,1,0,1.79Z"></path></svg>
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- copyright -->
+             <div id="copy">
+                Managed by <span>Raynrel Infotec</span> | Copyright @2024
+             </div>
+        </section>
+    </main>
+
+
+
+    <!-- JS  -->
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/gsap.js"></script>
+</body>
+
+</html>
