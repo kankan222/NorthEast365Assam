@@ -35,7 +35,12 @@
     appearance: none;
     font-family: 'Inter', sans-serif;
 }
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
 @font-face {
     font-family: 'Futura';
     src: url('/fonts/Futura-Bold.ttf');
